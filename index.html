@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  ::selection { background: #d8c4ad; color: #3b332c; }
+  @keyframes rzFade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 768px) {
+    .ms-nav a:not(.ms-nav-cta) { display: none !important; }
+    .ms-hero-grid { grid-template-columns: 1fr !important; }
+    .ms-about-grid { grid-template-columns: 1fr !important; }
+    .ms-exp-row { grid-template-columns: 1fr !important; gap: 6px !important; }
+    .ms-skills-grid { grid-template-columns: 1fr !important; }
+    .ms-edu-grid { grid-template-columns: 1fr !important; }
+    .ms-ach-grid { grid-template-columns: 1fr !important; }
+    .ms-footer-grid { grid-template-columns: 1fr !important; }
+  }
+</style>
+</helmet>
+<div style="background: var(--paper, #ece6da); color: var(--ink, #423a33); font-family: 'Jost', sans-serif; min-height: 100vh; -webkit-font-smoothing: antialiased;">
+
+  <header style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 18px clamp(24px, 6vw, 96px); background: color-mix(in srgb, var(--paper, #ece6da) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(140,91,73,0.14);">
+    <a href="#top" style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; letter-spacing: 0.04em; color: var(--accent, #a6766a); text-decoration: none;">Manasvi Shah</a>
+    <nav class="ms-nav" style="display: flex; gap: clamp(14px, 2.4vw, 36px); align-items: center;">
+      <a href="#about" style="font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink, #423a33); text-decoration: none; opacity: 0.78;">About</a>
+      <a href="#experience" style="font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink, #423a33); text-decoration: none; opacity: 0.78;">Experience</a>
+      <a href="#skills" style="font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink, #423a33); text-decoration: none; opacity: 0.78;">Skills</a>
+      <a href="#education" style="font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink, #423a33); text-decoration: none; opacity: 0.78;">Education</a>
+      <a href="mailto:manasvibshah@gmail.com" class="ms-nav-cta" style="font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--paper, #ece6da); background: var(--accent-deep, #8c5b49); padding: 9px 18px; border-radius: 999px; text-decoration: none;">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="ms-hero-grid" style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(32px, 6vw, 90px); align-items: center; padding: clamp(48px, 8vw, 96px) clamp(24px, 6vw, 96px) clamp(56px, 7vw, 100px);">
+      <div>
+        <p style="margin: 0 0 26px; font-size: 12px; letter-spacing: 0.34em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">HR · People Analytics · Org Psychology</p>
+        <h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(64px, 9vw, 128px); line-height: 0.92; letter-spacing: 0.005em; color: var(--accent, #a6766a);">Manasvi<br>Shah</h1>
+        <p style="margin: 30px 0 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 2.6vw, 32px); font-style: italic; color: var(--ink, #423a33); max-width: 30ch; line-height: 1.4;">Turning people insights into smarter workforce decisions.</p>
+        <div style="display: flex; gap: 14px; margin-top: 40px; flex-wrap: wrap;">
+          <a href="#experience" style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--paper, #ece6da); background: var(--accent-deep, #8c5b49); padding: 14px 26px; border-radius: 999px; text-decoration: none;">View Experience</a>
+          <a href="https://linkedin.com/in/manasvishah-/" target="_blank" style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-deep, #8c5b49); border: 1px solid var(--accent-deep, #8c5b49); padding: 14px 26px; border-radius: 999px; text-decoration: none;">LinkedIn</a>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 24px 60px -28px rgba(90,55,40,0.45); width: fit-content; margin: 0 auto;">
+          <img src="./IMG_8117.JPG" alt="Manasvi Shah" style="display:block; width: clamp(180px, 28vw, 320px); height:auto;">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <a href="mailto:manasvibshah@gmail.com" style="display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--ink, #423a33);">
+            <span style="color: var(--accent-deep, #8c5b49); font-size: 19px; line-height: 1;">&rarr;</span>
+            <span style="font-size: 16px; letter-spacing: 0.01em;">manasvibshah@gmail.com</span>
+          </a>
+          <a href="tel:+919323830436" style="display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--ink, #423a33);">
+            <span style="color: var(--accent-deep, #8c5b49); font-size: 19px; line-height: 1;">&rarr;</span>
+            <span style="font-size: 16px; letter-spacing: 0.01em;">+91 93238 30436</span>
+          </a>
+          <a href="https://linkedin.com/in/manasvishah-/" target="_blank" style="display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--ink, #423a33);">
+            <span style="color: var(--accent-deep, #8c5b49); font-size: 19px; line-height: 1;">&rarr;</span>
+            <span style="font-size: 16px; letter-spacing: 0.01em;">linkedin.com/in/manasvishah-</span>
+          </a>
+          <div style="display: flex; align-items: center; gap: 16px; color: var(--ink, #423a33);">
+            <span style="color: var(--accent-deep, #8c5b49); font-size: 19px; line-height: 1;">&rarr;</span>
+            <span style="font-size: 16px; letter-spacing: 0.01em;">Ahmedabad, Gujarat, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="height: 1px; background: rgba(140,91,73,0.16); margin: 0 clamp(24px, 6vw, 96px);"></div>
+
+    <section id="about" class="ms-about-grid" style="padding: clamp(56px, 8vw, 104px) clamp(24px, 6vw, 96px); display: grid; grid-template-columns: 0.4fr 1fr; gap: clamp(28px, 5vw, 72px);">
+      <div>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">01 — Profile</p>
+        <h2 style="margin: 14px 0 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; color: var(--accent, #a6766a);">About</h2>
+      </div>
+      <p style="margin: 0; font-size: clamp(18px, 1.7vw, 22px); line-height: 1.7; color: var(--ink, #423a33); max-width: 62ch; font-weight: 300;">Psychology graduate with experience across HR operations, recruitment and stakeholder management. Skilled in talent acquisition, behavioral assessment and research methodologies, with a growing focus on <em style="font-style: italic; color: var(--accent-deep, #8c5b49);">People Analytics and data-driven HR practices</em>. I combine organizational psychology with hands-on HR experience to support informed workforce decisions — and I'm driven by using people insights to advance organizational effectiveness and employee success.</p>
+    </section>
+
+    <section id="experience" style="background: var(--paper-2, #f3eee4); padding: clamp(56px, 8vw, 104px) clamp(24px, 6vw, 96px);">
+      <div style="margin-bottom: clamp(36px, 5vw, 60px);">
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">02 — Career</p>
+        <h2 style="margin: 14px 0 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; color: var(--accent, #a6766a);">Work Experience</h2>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0;">
+
+        <div class="ms-exp-row" style="display: grid; grid-template-columns: 0.32fr 1fr; gap: clamp(20px, 4vw, 56px); padding: 32px 0; border-top: 1px solid rgba(140,91,73,0.18);">
+          <div>
+            <p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; color: var(--accent-deep, #8c5b49); font-weight: 500;">Feb 2026 — Present</p>
+          </div>
+          <div>
+            <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); color: var(--ink, #423a33);">Recruitment Executive &amp; Team Leader</h3>
+            <p style="margin: 4px 0 18px; font-size: 15px; letter-spacing: 0.04em; color: var(--accent, #a6766a);">Final Step Solutions</p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Lead candidate sourcing, screening and placement across multiple requirements.</li>
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Manage client coordination and support end-to-end recruitment processes.</li>
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Monitor hiring metrics and timelines to ensure efficient recruitment delivery.</li>
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Mentor team members and support continuous process improvements.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ms-exp-row" style="display: grid; grid-template-columns: 0.32fr 1fr; gap: clamp(20px, 4vw, 56px); padding: 32px 0; border-top: 1px solid rgba(140,91,73,0.18);">
+          <div>
+            <p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; color: var(--accent-deep, #8c5b49); font-weight: 500;">Dec 2025 — Feb 2026</p>
+          </div>
+          <div>
+            <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); color: var(--ink, #423a33);">HR Executive Intern</h3>
+            <p style="margin: 4px 0 18px; font-size: 15px; letter-spacing: 0.04em; color: var(--accent, #a6766a);">ConsultupIndia (CISPL)</p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Coordinated recruitment: job postings, resume screening and interview scheduling.</li>
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Supported onboarding, attendance management, payroll and employee queries.</li>
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Maintained HR records for smooth day-to-day operations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ms-exp-row" style="display: grid; grid-template-columns: 0.32fr 1fr; gap: clamp(20px, 4vw, 56px); padding: 32px 0; border-top: 1px solid rgba(140,91,73,0.18);">
+          <div>
+            <p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; color: var(--accent-deep, #8c5b49); font-weight: 500;">May — Jun 2024</p>
+          </div>
+          <div>
+            <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); color: var(--ink, #423a33);">HR Intern</h3>
+            <p style="margin: 4px 0 18px; font-size: 15px; letter-spacing: 0.04em; color: var(--accent, #a6766a);">Naman Integrated Management Services</p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Developed strengths-based assessment content using the Gallup Strengths framework.</li>
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Supported workplace competency projects through research and data collection.</li>
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Worked on cross-functional projects, sharpening analytical problem-solving.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ms-exp-row" style="display: grid; grid-template-columns: 0.32fr 1fr; gap: clamp(20px, 4vw, 56px); padding: 32px 0; border-top: 1px solid rgba(140,91,73,0.18); border-bottom: 1px solid rgba(140,91,73,0.18);">
+          <div>
+            <p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; color: var(--accent-deep, #8c5b49); font-weight: 500;">May — Jun 2024</p>
+          </div>
+          <div>
+            <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); color: var(--ink, #423a33);">Clinical Psychology Intern</h3>
+            <p style="margin: 4px 0 18px; font-size: 15px; letter-spacing: 0.04em; color: var(--accent, #a6766a);">Zydus Hospitals</p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Observed clinical psychology practices and maintained structured patient documentation.</li>
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Gained exposure to psychological assessment protocols and behavioral frameworks.</li>
+              <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--muted, #6e635a); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49);">&rarr;</span> Collaborated with healthcare professionals on assessment and documentation.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="ms-skills-grid" style="padding: clamp(56px, 8vw, 104px) clamp(24px, 6vw, 96px); display: grid; grid-template-columns: 0.4fr 1fr; gap: clamp(28px, 5vw, 72px);">
+      <div>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">03 — Capabilities</p>
+        <h2 style="margin: 14px 0 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; color: var(--accent, #a6766a);">Skills</h2>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; align-content: flex-start;">
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">People Analytics</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">HR Analytics</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Talent Acquisition &amp; Recruitment</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Candidate Sourcing &amp; Screening</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Recruitment Coordination</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Interview Coordination</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">HR Operations &amp; Coordination</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Onboarding &amp; Induction</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Employee Lifecycle Management</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Stakeholder Management</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Organizational Psychology</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Behavioral Assessment</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Research Methodologies</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Data Collection &amp; Interpretation</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">Analytical Thinking</span>
+        <span style="font-size: 15px; padding: 11px 20px; border: 1px solid rgba(140,91,73,0.3); border-radius: 999px; color: var(--ink, #423a33); background: var(--paper-2, #f3eee4);">MS Excel &amp; MS Office</span>
+      </div>
+    </section>
+
+    <section id="education" style="background: var(--paper-2, #f3eee4); padding: clamp(56px, 8vw, 104px) clamp(24px, 6vw, 96px);">
+      <div style="margin-bottom: clamp(36px, 5vw, 60px);">
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">04 — Foundation</p>
+        <h2 style="margin: 14px 0 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; color: var(--accent, #a6766a);">Education</h2>
+      </div>
+      <div class="ms-edu-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 48px);">
+        <div style="background: var(--paper, #ece6da); border-radius: 16px; padding: clamp(28px, 3vw, 40px); border: 1px solid rgba(140,91,73,0.14);">
+          <p style="margin: 0; font-size: 13px; letter-spacing: 0.12em; color: var(--accent-deep, #8c5b49);">2021 — 2025</p>
+          <h3 style="margin: 12px 0 4px; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(24px, 2.6vw, 30px); color: var(--ink, #423a33);">Ahmedabad University</h3>
+          <p style="margin: 0 0 16px; font-size: 16px; color: var(--accent, #a6766a);">B.A. (Honours) in Psychology</p>
+          <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: var(--muted, #6e635a); font-weight: 300;">Focused on Human Capital Management, Organizational Behaviour and Psychological Assessment to understand employee and workplace dynamics, with a foundation in research methodologies and workplace behaviour.</p>
+        </div>
+        <div style="background: var(--paper, #ece6da); border-radius: 16px; padding: clamp(28px, 3vw, 40px); border: 1px solid rgba(140,91,73,0.14);">
+          <p style="margin: 0; font-size: 13px; letter-spacing: 0.12em; color: var(--accent-deep, #8c5b49);">Higher Secondary · 12th</p>
+          <h3 style="margin: 12px 0 4px; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(24px, 2.6vw, 30px); color: var(--ink, #423a33);">Zydus School for Excellence</h3>
+          <p style="margin: 0 0 16px; font-size: 16px; color: var(--accent, #a6766a);">Humanities · Vejalpur</p>
+          <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: var(--muted, #6e635a); font-weight: 300;">Studied Humanities with an emphasis on Psychology and Social Sciences, developing strong communication, analytical and interpersonal skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ms-ach-grid" style="padding: clamp(56px, 8vw, 104px) clamp(24px, 6vw, 96px); display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 80px);">
+      <div>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">05 — Highlights</p>
+        <h2 style="margin: 14px 0 28px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; color: var(--accent, #a6766a);">Achievements</h2>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px;">
+          <li style="display: flex; gap: 14px; font-size: 17px; line-height: 1.55; color: var(--ink, #423a33); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1;">01</span> Led recruitment activities and team coordination at Final Step Solutions.</li>
+          <li style="display: flex; gap: 14px; font-size: 17px; line-height: 1.55; color: var(--ink, #423a33); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1;">02</span> Developed strengths-based assessment content using the Gallup Strengths framework.</li>
+          <li style="display: flex; gap: 14px; font-size: 17px; line-height: 1.55; color: var(--ink, #423a33); font-weight: 300;"><span style="color: var(--accent-deep, #8c5b49); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1;">03</span> Built a foundation in psychology, research methodologies and workplace behavior.</li>
+        </ul>
+      </div>
+      <div>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">06 — Languages</p>
+        <h2 style="margin: 14px 0 28px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; color: var(--accent, #a6766a);">Languages</h2>
+        <div style="display: flex; flex-direction: column; gap: 0;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; padding: 18px 0; border-top: 1px solid rgba(140,91,73,0.18);">
+            <span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--ink, #423a33);">English</span>
+            <span style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">Professional</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; padding: 18px 0; border-top: 1px solid rgba(140,91,73,0.18);">
+            <span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--ink, #423a33);">Hindi</span>
+            <span style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">Native</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; padding: 18px 0; border-top: 1px solid rgba(140,91,73,0.18); border-bottom: 1px solid rgba(140,91,73,0.18);">
+            <span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--ink, #423a33);">Gujarati</span>
+            <span style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-deep, #8c5b49);">Native</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background: var(--accent-deep, #8c5b49); color: #f5ece4; padding: clamp(56px, 8vw, 96px) clamp(24px, 6vw, 96px);">
+      <div class="ms-footer-grid" style="display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end;">
+        <div>
+          <p style="margin: 0 0 14px; font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(255,255,255,0.7);">Let's connect</p>
+          <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 6vw, 76px); line-height: 1; color: #f5ece4;">Let's build better<br>people decisions.</h2>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px; align-items: flex-start;">
+          <a href="mailto:manasvibshah@gmail.com" style="display: flex; align-items: center; gap: 12px; color: #f5ece4; text-decoration: none; font-size: 16px;"><span style="opacity: 0.7;">&rarr;</span> manasvibshah@gmail.com</a>
+          <a href="tel:+919323830436" style="display: flex; align-items: center; gap: 12px; color: #f5ece4; text-decoration: none; font-size: 16px;"><span style="opacity: 0.7;">&rarr;</span> +91 93238 30436</a>
+          <a href="https://linkedin.com/in/manasvishah-/" target="_blank" style="display: flex; align-items: center; gap: 12px; color: #f5ece4; text-decoration: none; font-size: 16px;"><span style="opacity: 0.7;">&rarr;</span> LinkedIn</a>
+        </div>
+      </div>
+      <div style="margin-top: clamp(40px, 6vw, 72px); padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.2); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+        <span style="font-size: 13px; letter-spacing: 0.04em; color: rgba(255,255,255,0.7);">Manasvi Shah — HR · People Analytics · Organizational Psychology</span>
+        <span style="font-size: 13px; letter-spacing: 0.04em; color: rgba(255,255,255,0.7);">Ahmedabad, Gujarat, India</span>
+      </div>
+    </footer>
+
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: &quot;100%&quot;, &quot;height&quot;: 900 },
+  &quot;showPhoto&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot; },
+  &quot;accent&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#a6766a&quot;, &quot;tsType&quot;: &quot;string&quot; },
+  &quot;accentDeep&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#8c5b49&quot;, &quot;tsType&quot;: &quot;string&quot; },
+  &quot;paper&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#ece6da&quot;, &quot;tsType&quot;: &quot;string&quot; }
+}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.applyTheme();
+  }
+  componentDidUpdate() {
+    this.applyTheme();
+  }
+  applyTheme() {
+    const root = document.documentElement;
+    const accent = this.props.accent;
+    const accentDeep = this.props.accentDeep;
+    const paper = this.props.paper;
+    if (accent) root.style.setProperty('--accent', accent);
+    if (accentDeep) root.style.setProperty('--accent-deep', accentDeep);
+    if (paper) {
+      root.style.setProperty('--paper', paper);
+    }
+  }
+  renderVals() {
+    return {
+      showPhoto: this.props.showPhoto ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>
