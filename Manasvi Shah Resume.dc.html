@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Caveat:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0}
+  @keyframes msSwing{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.6deg)}}
+  @keyframes msFade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes msSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-thumb{background:#c9beb0;border-radius:6px}
+</style>
+</helmet>
+<div style="min-height:100vh;font-family:'Hanken Grotesk',sans-serif;color:#38332E;background-color:#F1E7DB;background-image:radial-gradient(circle, rgba(56,51,46,0.10) 1.1px, transparent 1.1px);background-size:24px 24px;overflow-x:hidden;position:relative">
+
+  <!-- NAV -->
+  <div style="position:sticky;top:18px;z-index:50;display:flex;justify-content:center;padding:0 24px">
+    <nav style="width:100%;max-width:1180px;display:flex;align-items:center;justify-content:space-between;background:rgba(250,244,235,0.82);backdrop-filter:blur(10px);border:1px solid rgba(56,51,46,0.06);border-radius:18px;padding:14px 26px;box-shadow:0 16px 40px -22px rgba(56,51,46,0.45)">
+      <a href="#top" style="font-family:Archivo;font-weight:900;font-size:26px;letter-spacing:.04em;color:#DD6B2A;text-decoration:none">MS</a>
+      <div style="display:flex;gap:30px;align-items:center;font-size:17px;color:#5b554d">
+        <a href="#experience" style="color:#5b554d;text-decoration:none" style-hover="color:#DD6B2A">Experience</a>
+        <a href="#skills" style="color:#5b554d;text-decoration:none" style-hover="color:#DD6B2A">Skills</a>
+        <a href="#education" style="color:#5b554d;text-decoration:none" style-hover="color:#DD6B2A">Education</a>
+        <a href="#contact" style="color:#5b554d;text-decoration:none" style-hover="color:#DD6B2A">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section id="top" data-screen-label="Hero" style="max-width:1180px;margin:0 auto;padding:46px 24px 60px;position:relative">
+    <!-- glow -->
+    <div style="position:absolute;left:50%;top:200px;transform:translateX(-50%);width:560px;height:520px;background:radial-gradient(closest-side, rgba(221,107,42,0.16), rgba(94,124,86,0.10), transparent 70%);filter:blur(10px);pointer-events:none;z-index:0"></div>
+
+    <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:34px;align-items:start;position:relative;z-index:1">
+
+      <!-- LEFT COLUMN -->
+      <div style="display:flex;flex-direction:column;gap:48px;padding-top:54px">
+        <!-- to do note -->
+        <div style="animation:msFade .6s ease both .05s">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;transform:rotate(-1.5deg)">
+            <span style="color:#DD6B2A;font-size:20px">✦</span>
+            <span style="font-family:Caveat;font-size:27px;color:#4a443c">my focus right now</span>
+          </div>
+          <div style="position:relative;background:#FFFCF6;border-radius:10px;padding:18px 18px 18px 44px;box-shadow:0 22px 40px -24px rgba(56,51,46,0.5);transform:rotate(-1.2deg);background-image:repeating-linear-gradient(transparent,transparent 33px,rgba(56,51,46,0.07) 33px,rgba(56,51,46,0.07) 34px);background-position:0 14px">
+            <div style="position:absolute;left:0;top:0;bottom:0;width:30px;background:#DD6B2A;border-radius:10px 0 0 10px"></div>
+            <div style="position:absolute;left:13px;top:18px;bottom:18px;width:4px;display:flex;flex-direction:column;justify-content:space-around"><span style="width:9px;height:9px;border-radius:50%;background:#F1E7DB;box-shadow:inset 0 0 0 2px rgba(0,0,0,.12);margin-left:-3px"></span><span style="width:9px;height:9px;border-radius:50%;background:#F1E7DB;box-shadow:inset 0 0 0 2px rgba(0,0,0,.12);margin-left:-3px"></span><span style="width:9px;height:9px;border-radius:50%;background:#F1E7DB;box-shadow:inset 0 0 0 2px rgba(0,0,0,.12);margin-left:-3px"></span></div>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-family:Caveat;font-size:22px;color:#4a443c;line-height:1.15">
+              <li style="display:flex;gap:8px"><span style="color:#5E7C56;font-size:19px">✔</span><span>Lead recruitment @ Final Step Solutions</span></li>
+              <li style="display:flex;gap:8px"><span style="color:#5E7C56;font-size:19px">✔</span><span>Grow into People Analytics</span></li>
+              <li style="display:flex;gap:8px"><span style="color:#5E7C56;font-size:19px">✔</span><span>Build data-driven HR practices</span></li>
+              <li style="display:flex;gap:8px"><span style="color:#5E7C56;font-size:19px">✔</span><span>Strengthen stakeholder management</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- finder: what I work on -->
+        <div style="animation:msFade .6s ease both .15s">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;transform:rotate(-1deg)">
+            <span style="font-size:19px">🗂️</span>
+            <span style="font-family:Caveat;font-size:27px;color:#4a443c">what do i work on?</span>
+          </div>
+          <div style="background:#F4EFE7;border-radius:12px;box-shadow:0 22px 44px -26px rgba(56,51,46,0.55);overflow:hidden;transform:rotate(1deg)">
+            <div style="display:flex;align-items:center;gap:7px;padding:9px 12px;background:#E7E0D5;border-bottom:1px solid rgba(56,51,46,0.08)">
+              <span style="width:11px;height:11px;border-radius:50%;background:#E86A5E"></span>
+              <span style="width:11px;height:11px;border-radius:50%;background:#F2C14E"></span>
+              <span style="width:11px;height:11px;border-radius:50%;background:#7FB069"></span>
+              <span style="flex:1;text-align:center;font-size:12px;color:#8a8377;margin-right:30px">manasvi's domains</span>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px 6px;padding:18px 14px">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:50px;height:40px;position:relative"><div style="position:absolute;top:0;left:4px;width:22px;height:8px;background:#5E7C56;border-radius:4px 4px 0 0"></div><div style="position:absolute;top:5px;left:0;width:50px;height:35px;background:#6f9166;border-radius:5px"></div></div><span style="font-size:11px;text-align:center;color:#5b554d;line-height:1.1">Talent<br>Acquisition</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:50px;height:40px;position:relative"><div style="position:absolute;top:0;left:4px;width:22px;height:8px;background:#5E7C56;border-radius:4px 4px 0 0"></div><div style="position:absolute;top:5px;left:0;width:50px;height:35px;background:#6f9166;border-radius:5px"></div></div><span style="font-size:11px;text-align:center;color:#5b554d;line-height:1.1">HR<br>Operations</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:50px;height:40px;position:relative"><div style="position:absolute;top:0;left:4px;width:22px;height:8px;background:#DD6B2A;border-radius:4px 4px 0 0"></div><div style="position:absolute;top:5px;left:0;width:50px;height:35px;background:#e88245;border-radius:5px"></div></div><span style="font-size:11px;text-align:center;color:#5b554d;line-height:1.1">People<br>Analytics</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:50px;height:40px;position:relative"><div style="position:absolute;top:0;left:4px;width:22px;height:8px;background:#5E7C56;border-radius:4px 4px 0 0"></div><div style="position:absolute;top:5px;left:0;width:50px;height:35px;background:#6f9166;border-radius:5px"></div></div><span style="font-size:11px;text-align:center;color:#5b554d;line-height:1.1">Onboarding</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:50px;height:40px;position:relative"><div style="position:absolute;top:0;left:4px;width:22px;height:8px;background:#DD6B2A;border-radius:4px 4px 0 0"></div><div style="position:absolute;top:5px;left:0;width:50px;height:35px;background:#e88245;border-radius:5px"></div></div><span style="font-size:11px;text-align:center;color:#5b554d;line-height:1.1">Behavioral<br>Assessment</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER: BADGE -->
+      <div style="display:flex;flex-direction:column;align-items:center">
+        <div style="width:38px;height:118px;background:repeating-linear-gradient(180deg,#8d8a86 0 4px,#a8a39d 4px 8px);border-radius:3px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.05);margin-bottom:-14px;z-index:1"></div>
+        <div style="transform-origin:top center;animation:msSwing 6.5s ease-in-out infinite">
+          <div style="position:relative;width:312px;background:linear-gradient(160deg,#a39e98,#8f8a84);border-radius:26px;padding:15px;box-shadow:0 40px 60px -30px rgba(56,51,46,0.7), inset 0 1px 0 rgba(255,255,255,.25)">
+            <div style="position:absolute;top:-9px;left:50%;transform:translateX(-50%);width:62px;height:18px;background:#6f6b66;border-radius:6px;box-shadow:inset 0 -2px 3px rgba(0,0,0,.3)"></div>
+            <div style="position:absolute;top:-4px;left:50%;transform:translateX(-50%);width:30px;height:7px;background:#2c2925;border-radius:4px"></div>
+            <img src="assets/badge-photo.jpg" alt="Manasvi Shah" style="width:100%;height:336px;object-fit:cover;object-position:center 18%;border-radius:16px;display:block;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)">
+            <div style="background:#FFFCF6;border-radius:16px;margin-top:13px;padding:16px 14px 18px;text-align:center;box-shadow:inset 0 0 0 1px rgba(0,0,0,.04)">
+              <div style="font-family:Caveat;font-weight:700;font-size:56px;color:#DD6B2A;line-height:.85">Manasvi</div>
+              <div style="font-family:Archivo;font-weight:700;font-size:12px;letter-spacing:.2em;color:#6b655d;margin-top:6px">HR &amp; RECRUITMENT</div>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-family:Caveat;font-size:24px;color:#5b554d;text-align:center;max-width:300px;margin:26px 0 0;line-height:1.25">"a psychologist by training, a recruiter by practice."</p>
+
+        <button onClick="{{ printResume }}" style="margin-top:22px;display:inline-flex;align-items:center;gap:10px;background:#DD6B2A;color:#fff;border:none;font-family:Archivo;font-weight:700;font-size:13px;letter-spacing:.12em;padding:15px 26px;border-radius:12px;cursor:pointer;box-shadow:0 18px 30px -16px rgba(221,107,42,0.9)" style-hover="background:#c75c1f;transform:translateY(-2px)">DOWNLOAD RESUME ↓</button>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div style="display:flex;flex-direction:column;gap:52px;padding-top:54px;align-items:flex-end">
+        <!-- stamp -->
+        <div style="animation:msFade .6s ease both .1s">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;justify-content:flex-end;transform:rotate(1.5deg)">
+            <span style="font-family:Caveat;font-size:27px;color:#4a443c">where am i from?</span>
+            <span style="color:#5E7C56;font-size:18px">↡</span>
+          </div>
+          <div style="width:210px;padding:12px;background:#FBF7F0;border:2px dashed #5E7C56;border-radius:6px;box-shadow:0 18px 34px -22px rgba(56,51,46,0.55);transform:rotate(2.5deg)">
+            <div style="border:2px solid #5E7C56;border-radius:4px;padding:14px 14px 16px;position:relative">
+              <div style="font-family:'Courier New',monospace;font-size:12px;color:#5E7C56;letter-spacing:.04em">{{ stamp }}</div>
+              <div style="height:64px;margin:10px 0;border-radius:4px;background:linear-gradient(135deg,#d7e3d2,#eef2ea);position:relative;overflow:hidden">
+                <div style="position:absolute;bottom:6px;left:8px;color:#5E7C56;font-size:30px;line-height:1">📍</div>
+              </div>
+              <div style="font-family:'Courier New',monospace;font-size:12px;color:#7a8a73">INDIA</div>
+              <div style="font-family:Archivo;font-weight:800;font-size:24px;color:#5E7C56;letter-spacing:-.01em">Ahmedabad</div>
+              <div style="font-family:'Courier New',monospace;font-size:11px;color:#7a8a73;margin-top:2px">Gujarat</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- since when note -->
+        <div style="animation:msFade .6s ease both .2s">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;justify-content:flex-end;transform:rotate(-1deg)">
+            <span style="font-family:Caveat;font-size:27px;color:#4a443c">since when?</span>
+            <span style="font-size:18px">💡</span>
+          </div>
+          <div style="position:relative;width:236px">
+            <div style="position:absolute;top:6px;left:8px;width:100%;height:100%;background:#fbe7c9;border-radius:10px;transform:rotate(3deg)"></div>
+            <div style="position:absolute;top:3px;left:4px;width:100%;height:100%;background:#fdf3da;border-radius:10px;transform:rotate(1.5deg)"></div>
+            <div style="position:relative;background:#FFFCF6;border-radius:10px;padding:18px 18px 20px;box-shadow:0 22px 40px -24px rgba(56,51,46,0.5);transform:rotate(-1.5deg);background-image:repeating-linear-gradient(transparent,transparent 27px,rgba(56,51,46,0.06) 27px,rgba(56,51,46,0.06) 28px)">
+              <div style="position:absolute;top:-12px;right:24px;width:14px;height:46px;border:3px solid #b9b3a8;border-radius:8px;border-bottom:none;transform:rotate(8deg)"></div>
+              <div style="display:flex;gap:8px">
+                <span style="width:8px;height:8px;border-radius:50%;background:#5E7C56;margin-top:6px"></span>
+                <span style="width:8px;height:8px;border-radius:50%;background:#DD6B2A;margin-top:6px"></span>
+              </div>
+              <div style="font-family:Caveat;font-weight:700;font-size:38px;color:#DD6B2A;line-height:.9;margin-top:6px">2024 → now</div>
+              <div style="font-size:15px;color:#5b554d;margin-top:8px;line-height:1.4">Recruitment, HR operations &amp; an<br>eye on People Analytics.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMMARY BAND -->
+  <section style="max-width:1180px;margin:0 auto;padding:30px 24px 70px">
+    <div style="background:#FBF6EE;border:1px solid rgba(56,51,46,0.07);border-radius:22px;padding:54px 48px;box-shadow:0 30px 60px -40px rgba(56,51,46,0.5);background-image:linear-gradient(rgba(94,124,86,0.045) 1px,transparent 1px),linear-gradient(90deg,rgba(94,124,86,0.045) 1px,transparent 1px);background-size:30px 30px">
+      <h2 style="font-family:Archivo;font-weight:800;font-size:46px;line-height:1.06;letter-spacing:-.02em;text-align:center;margin:0;text-transform:uppercase;color:#38332E">PSYCHOLOGY BY TRAINING,<br><span style="font-family:Caveat;font-weight:700;text-transform:none;color:#DD6B2A;font-size:58px">people-focused by practice.</span></h2>
+      <p style="max-width:760px;margin:26px auto 0;text-align:center;font-size:18px;line-height:1.6;color:#5b554d;text-wrap:pretty">A psychology graduate working across HR operations, recruitment and stakeholder management — pairing organizational psychology with hands-on talent work, and a growing focus on People Analytics and data-driven HR to support better workforce decisions.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;max-width:760px;margin-left:auto;margin-right:auto">
+        <div style="text-align:center"><div style="font-family:Archivo;font-weight:600;font-size:13px;letter-spacing:.14em;color:#8a8377">GRADUATED</div><div style="font-family:Archivo;font-weight:800;font-size:48px;color:#38332E;line-height:1;margin:6px 0">2025</div><div style="font-size:14px;color:#7a746b">BA (Hons) Psychology</div></div>
+        <div style="text-align:center;border-left:1px solid rgba(56,51,46,0.1);border-right:1px solid rgba(56,51,46,0.1)"><div style="font-family:Archivo;font-weight:600;font-size:13px;letter-spacing:.14em;color:#8a8377">ROLES &amp; INTERNSHIPS</div><div style="font-family:Archivo;font-weight:800;font-size:48px;color:#38332E;line-height:1;margin:6px 0">4</div><div style="font-size:14px;color:#7a746b">HR, recruitment &amp; clinical</div></div>
+        <div style="text-align:center"><div style="font-family:Archivo;font-weight:600;font-size:13px;letter-spacing:.14em;color:#8a8377">LANGUAGES</div><div style="font-family:Archivo;font-weight:800;font-size:48px;color:#38332E;line-height:1;margin:6px 0">3</div><div style="font-size:14px;color:#7a746b">English · Hindi · Gujarati</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" data-screen-label="Experience" style="max-width:1180px;margin:0 auto;padding:20px 24px 70px">
+    <div style="text-align:center;margin-bottom:34px">
+      <h2 style="font-family:Archivo;font-weight:800;font-size:42px;letter-spacing:-.02em;margin:0;text-transform:uppercase;color:#38332E">WORK EXPERIENCE</h2>
+      <p style="font-family:Caveat;font-size:30px;color:#DD6B2A;margin:0">the journey so far</p>
+    </div>
+    <div style="background:#F4EFE7;border-radius:16px;box-shadow:0 36px 70px -40px rgba(56,51,46,0.6);overflow:hidden">
+      <div style="display:flex;align-items:center;gap:8px;padding:13px 18px;background:#E7E0D5;border-bottom:1px solid rgba(56,51,46,0.08)">
+        <span style="width:13px;height:13px;border-radius:50%;background:#E86A5E"></span>
+        <span style="width:13px;height:13px;border-radius:50%;background:#F2C14E"></span>
+        <span style="width:13px;height:13px;border-radius:50%;background:#7FB069"></span>
+        <span style="flex:1;text-align:center;font-size:14px;color:#8a8377;margin-right:40px">manasvi's experience</span>
+      </div>
+      <div style="display:flex">
+        <aside style="width:200px;flex-shrink:0;padding:24px 18px;border-right:1px solid rgba(56,51,46,0.08);background:#EFE9DF;font-size:14px;color:#5b554d">
+          <div style="font-size:12px;letter-spacing:.1em;color:#a59c8e;text-transform:uppercase;margin-bottom:10px">Favourites</div>
+          <div style="display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:8px;background:rgba(221,107,42,0.14);color:#c75c1f;font-weight:600">📁 Recruitment</div>
+          <div style="display:flex;align-items:center;gap:8px;padding:7px 8px">📁 HR Operations</div>
+          <div style="display:flex;align-items:center;gap:8px;padding:7px 8px">📁 Psychology</div>
+          <div style="font-size:12px;letter-spacing:.1em;color:#a59c8e;text-transform:uppercase;margin:18px 0 10px">Explore</div>
+          <div style="display:flex;align-items:center;gap:8px;padding:7px 8px">📍 Ahmedabad</div>
+          <a href="#contact" style="display:flex;align-items:center;gap:8px;padding:7px 8px;color:#5b554d;text-decoration:none">✉️ Get in touch</a>
+        </aside>
+        <div style="flex:1;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:18px">
+          <!-- featured current role -->
+          <div style="grid-column:1 / -1;background:#FFFCF6;border:1px solid rgba(56,51,46,0.06);border-radius:14px;padding:24px 26px;box-shadow:0 20px 40px -30px rgba(56,51,46,0.5);position:relative">
+            <span style="position:absolute;top:18px;right:20px;display:inline-flex;align-items:center;gap:6px;background:rgba(94,124,86,0.14);color:#5E7C56;font-size:12px;font-weight:700;letter-spacing:.06em;padding:5px 11px;border-radius:20px">● PRESENT</span>
+            <div style="font-family:Archivo;font-weight:600;font-size:13px;letter-spacing:.1em;color:#DD6B2A">FINAL STEP SOLUTIONS · FEB 2026 — NOW</div>
+            <div style="font-family:Archivo;font-weight:800;font-size:26px;color:#38332E;margin:6px 0 12px">Recruitment Executive &amp; Team Leader</div>
+            <ul style="margin:0;padding-left:20px;display:grid;grid-template-columns:1fr 1fr;gap:6px 28px;font-size:15px;color:#5b554d;line-height:1.45">
+              <li>Lead candidate sourcing, screening &amp; placement across multiple requirements.</li>
+              <li>Manage client coordination and end-to-end recruitment processes.</li>
+              <li>Monitor hiring metrics &amp; timelines for efficient delivery.</li>
+              <li>Mentor team members and drive process improvements.</li>
+            </ul>
+          </div>
+          <!-- consultup -->
+          <div style="background:#FFFCF6;border:1px solid rgba(56,51,46,0.06);border-radius:14px;padding:22px 24px;box-shadow:0 20px 40px -30px rgba(56,51,46,0.5)">
+            <div style="font-family:Archivo;font-weight:600;font-size:12px;letter-spacing:.1em;color:#DD6B2A">CONSULTUPINDIA (CISPL) · DEC 2025 — FEB 2026</div>
+            <div style="font-family:Archivo;font-weight:800;font-size:21px;color:#38332E;margin:6px 0 12px">HR Executive Intern</div>
+            <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px;color:#5b554d;line-height:1.45">
+              <li>Coordinated job postings, resume screening &amp; interview scheduling.</li>
+              <li>Supported onboarding, attendance, payroll &amp; employee queries.</li>
+              <li>Maintained HR records for smooth operations.</li>
+            </ul>
+          </div>
+          <!-- naman -->
+          <div style="background:#FFFCF6;border:1px solid rgba(56,51,46,0.06);border-radius:14px;padding:22px 24px;box-shadow:0 20px 40px -30px rgba(56,51,46,0.5)">
+            <div style="font-family:Archivo;font-weight:600;font-size:12px;letter-spacing:.1em;color:#DD6B2A">NAMAN INTEGRATED MGMT · MAY — JUN 2024</div>
+            <div style="font-family:Archivo;font-weight:800;font-size:21px;color:#38332E;margin:6px 0 12px">HR Intern</div>
+            <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px;color:#5b554d;line-height:1.45">
+              <li>Built strengths-based assessment content using the Gallup framework.</li>
+              <li>Supported workplace competency projects with research &amp; data.</li>
+              <li>Worked cross-functionally, sharpening analytical problem-solving.</li>
+            </ul>
+          </div>
+          <!-- zydus -->
+          <div style="grid-column:1 / -1;background:#FFFCF6;border:1px solid rgba(56,51,46,0.06);border-radius:14px;padding:22px 24px;box-shadow:0 20px 40px -30px rgba(56,51,46,0.5)">
+            <div style="font-family:Archivo;font-weight:600;font-size:12px;letter-spacing:.1em;color:#DD6B2A">ZYDUS HOSPITALS · MAY — JUN 2024</div>
+            <div style="font-family:Archivo;font-weight:800;font-size:21px;color:#38332E;margin:6px 0 12px">Clinical Psychology Intern</div>
+            <ul style="margin:0;padding-left:20px;display:grid;grid-template-columns:1fr 1fr;gap:6px 28px;font-size:15px;color:#5b554d;line-height:1.45">
+              <li>Observed clinical practice &amp; maintained structured patient documentation.</li>
+              <li>Gained exposure to psychological assessment protocols.</li>
+              <li>Built understanding of evidence-based behavioral assessment.</li>
+              <li>Collaborated with healthcare professionals on assessment &amp; records.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" data-screen-label="Skills" style="max-width:1180px;margin:0 auto;padding:20px 24px 76px">
+    <div style="text-align:center;margin-bottom:40px">
+      <h2 style="font-family:Archivo;font-weight:800;font-size:42px;letter-spacing:-.02em;margin:0;text-transform:uppercase;color:#38332E">WHAT I BRING</h2>
+      <p style="font-family:Caveat;font-size:30px;color:#DD6B2A;margin:0">the toolkit</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px">
+      <div style="background:#FDF3DA;border-radius:6px;padding:22px;box-shadow:0 18px 36px -24px rgba(56,51,46,0.5);transform:rotate(-1.6deg)">
+        <div style="font-family:Caveat;font-weight:700;font-size:26px;color:#c75c1f;margin-bottom:10px">People &amp; Analytics</div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:15px;color:#5b554d">
+          <li>📊 People Analytics</li>
+          <li>📈 HR Analytics</li>
+          <li>🧮 Data Collection &amp; Interpretation</li>
+          <li>🔍 Analytical Thinking</li>
+        </ul>
+      </div>
+      <div style="background:#FFF6F0;border-radius:6px;padding:22px;box-shadow:0 18px 36px -24px rgba(56,51,46,0.5);transform:rotate(1.3deg)">
+        <div style="font-family:Caveat;font-weight:700;font-size:26px;color:#c75c1f;margin-bottom:10px">Talent Acquisition</div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:15px;color:#5b554d">
+          <li>🎯 Talent Acquisition</li>
+          <li>🔎 Candidate Sourcing &amp; Screening</li>
+          <li>🗓️ Interview Coordination</li>
+          <li>🤝 Recruitment Coordination</li>
+        </ul>
+      </div>
+      <div style="background:#EAF0E6;border-radius:6px;padding:22px;box-shadow:0 18px 36px -24px rgba(56,51,46,0.5);transform:rotate(-1.1deg)">
+        <div style="font-family:Caveat;font-weight:700;font-size:26px;color:#5E7C56;margin-bottom:10px">HR Operations</div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:15px;color:#5b554d">
+          <li>⚙️ HR Operations &amp; Coordination</li>
+          <li>🚪 Onboarding &amp; Induction</li>
+          <li>🔄 Employee Lifecycle Management</li>
+          <li>👥 Stakeholder Management</li>
+        </ul>
+      </div>
+      <div style="background:#FDF3DA;border-radius:6px;padding:22px;box-shadow:0 18px 36px -24px rgba(56,51,46,0.5);transform:rotate(1.6deg)">
+        <div style="font-family:Caveat;font-weight:700;font-size:26px;color:#c75c1f;margin-bottom:10px">Psychology</div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:15px;color:#5b554d">
+          <li>🧠 Organizational Psychology</li>
+          <li>📝 Behavioral Assessment</li>
+          <li>📚 Research Methodologies</li>
+          <li>📑 MS Excel &amp; MS Office</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section data-screen-label="Achievements" style="max-width:1180px;margin:0 auto;padding:20px 24px 80px">
+    <div style="text-align:center;margin-bottom:46px">
+      <h2 style="font-family:Archivo;font-weight:800;font-size:42px;letter-spacing:-.02em;margin:0;text-transform:uppercase;color:#38332E">WORTH NOTING</h2>
+      <p style="font-family:Caveat;font-size:30px;color:#DD6B2A;margin:0">a few highlights</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:34px;max-width:980px;margin:0 auto">
+      <div style="position:relative;background:#FDF3DA;border-radius:4px;padding:30px 24px 26px;box-shadow:0 24px 44px -28px rgba(56,51,46,0.55);transform:rotate(-2deg);background-image:repeating-linear-gradient(transparent,transparent 29px,rgba(56,51,46,0.06) 29px,rgba(56,51,46,0.06) 30px);background-position:0 16px">
+        <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(-3deg);width:90px;height:30px;background:rgba(221,107,42,0.35);border:1px solid rgba(221,107,42,0.2)"></div>
+        <div style="font-family:Caveat;font-weight:700;font-size:23px;color:#c75c1f;line-height:1.1;margin-bottom:8px">Led a recruitment team</div>
+        <p style="margin:0;font-size:15px;color:#5b554d;line-height:1.5">Drove recruitment activities &amp; team coordination at Final Step Solutions.</p>
+      </div>
+      <div style="position:relative;background:#FFF6F0;border-radius:4px;padding:30px 24px 26px;box-shadow:0 24px 44px -28px rgba(56,51,46,0.55);transform:rotate(1.4deg);background-image:repeating-linear-gradient(transparent,transparent 29px,rgba(56,51,46,0.06) 29px,rgba(56,51,46,0.06) 30px);background-position:0 16px">
+        <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(4deg);width:90px;height:30px;background:rgba(94,124,86,0.32);border:1px solid rgba(94,124,86,0.2)"></div>
+        <div style="font-family:Caveat;font-weight:700;font-size:23px;color:#5E7C56;line-height:1.1;margin-bottom:8px">Gallup Strengths content</div>
+        <p style="margin:0;font-size:15px;color:#5b554d;line-height:1.5">Developed strengths-based assessment content using the Gallup Strengths framework.</p>
+      </div>
+      <div style="position:relative;background:#EAF0E6;border-radius:4px;padding:30px 24px 26px;box-shadow:0 24px 44px -28px rgba(56,51,46,0.55);transform:rotate(-1.2deg);background-image:repeating-linear-gradient(transparent,transparent 29px,rgba(56,51,46,0.06) 29px,rgba(56,51,46,0.06) 30px);background-position:0 16px">
+        <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(-2deg);width:90px;height:30px;background:rgba(221,107,42,0.3);border:1px solid rgba(221,107,42,0.2)"></div>
+        <div style="font-family:Caveat;font-weight:700;font-size:23px;color:#c75c1f;line-height:1.1;margin-bottom:8px">A psych foundation</div>
+        <p style="margin:0;font-size:15px;color:#5b554d;line-height:1.5">Built a base in psychology, research methodologies &amp; workplace behavior.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" data-screen-label="Education" style="max-width:1180px;margin:0 auto;padding:20px 24px 60px">
+    <div style="text-align:center;margin-bottom:38px">
+      <h2 style="font-family:Archivo;font-weight:800;font-size:42px;letter-spacing:-.02em;margin:0;text-transform:uppercase;color:#38332E">WHERE I LEARNED</h2>
+      <p style="font-family:Caveat;font-size:30px;color:#DD6B2A;margin:0">education</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:980px;margin:0 auto">
+      <div style="background:#FBF6EE;border:1px solid rgba(56,51,46,0.07);border-radius:16px;padding:30px;box-shadow:0 24px 50px -34px rgba(56,51,46,0.5)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:Archivo;font-weight:600;font-size:13px;letter-spacing:.1em;color:#DD6B2A">2021 — 2025</span></div>
+        <div style="font-family:Archivo;font-weight:800;font-size:24px;color:#38332E;margin:8px 0 2px">Ahmedabad University</div>
+        <div style="font-size:16px;color:#5b554d;margin-bottom:14px">Bachelor of Arts (Honours), Psychology</div>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:7px;font-size:15px;color:#5b554d;line-height:1.45">
+          <li>Focused on Human Capital Management, Organizational Behaviour &amp; Psychological Assessment.</li>
+          <li>Built a foundation in Research Methodologies and Workplace Behaviour.</li>
+        </ul>
+      </div>
+      <div style="background:#FBF6EE;border:1px solid rgba(56,51,46,0.07);border-radius:16px;padding:30px;box-shadow:0 24px 50px -34px rgba(56,51,46,0.5)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:Archivo;font-weight:600;font-size:13px;letter-spacing:.1em;color:#DD6B2A">HIGHER SECONDARY (12TH)</span></div>
+        <div style="font-family:Archivo;font-weight:800;font-size:24px;color:#38332E;margin:8px 0 2px">Zydus School for Excellence</div>
+        <div style="font-size:16px;color:#5b554d;margin-bottom:14px">Humanities · Vejalpur</div>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:7px;font-size:15px;color:#5b554d;line-height:1.45">
+          <li>Studied Humanities with emphasis on Psychology and Social Sciences.</li>
+          <li>Developed strong communication, analytical &amp; interpersonal skills.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section style="max-width:980px;margin:0 auto;padding:6px 24px 84px">
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:34px">
+      <div style="text-align:center"><div style="width:104px;height:104px;border-radius:50%;border:2px dashed #DD6B2A;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#FFF6F0;transform:rotate(-4deg)"><span style="font-family:Archivo;font-weight:800;font-size:22px;color:#38332E">EN</span><span style="font-size:10px;color:#a59c8e;letter-spacing:.05em">PROFESSIONAL</span></div><div style="font-family:Caveat;font-size:23px;color:#5b554d;margin-top:8px">English</div></div>
+      <div style="text-align:center"><div style="width:104px;height:104px;border-radius:50%;border:2px dashed #5E7C56;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#EAF0E6;transform:rotate(3deg)"><span style="font-family:Archivo;font-weight:800;font-size:22px;color:#38332E">हि</span><span style="font-size:10px;color:#a59c8e;letter-spacing:.05em">NATIVE</span></div><div style="font-family:Caveat;font-size:23px;color:#5b554d;margin-top:8px">Hindi</div></div>
+      <div style="text-align:center"><div style="width:104px;height:104px;border-radius:50%;border:2px dashed #DD6B2A;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#FDF3DA;transform:rotate(-2deg)"><span style="font-family:Archivo;font-weight:800;font-size:22px;color:#38332E">ગુ</span><span style="font-size:10px;color:#a59c8e;letter-spacing:.05em">NATIVE</span></div><div style="font-family:Caveat;font-size:23px;color:#5b554d;margin-top:8px">Gujarati</div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT (light) -->
+  <section id="contact" data-screen-label="Contact" style="max-width:1180px;margin:0 auto;padding:30px 24px 70px;text-align:center;position:relative">
+    <p style="font-family:Caveat;font-size:30px;color:#DD6B2A;margin:0">&amp; that's the gist!</p>
+    <h2 style="font-family:Archivo;font-weight:800;font-size:48px;letter-spacing:-.02em;margin:6px 0 0;text-transform:uppercase;color:#38332E">GLAD YOU MADE IT HERE.</h2>
+    <p style="font-family:Caveat;font-size:26px;color:#DD6B2A;margin:34px 0 14px">you can reach me on</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px 26px;font-family:Archivo;font-weight:800;font-size:24px;letter-spacing:.02em">
+      <a href="https://linkedin.com/in/manasvishah-/" target="_blank" style="color:#2C66C2;text-decoration:none">LINKEDIN ↗</a>
+      <span style="color:#c9beb0">•</span>
+      <a href="mailto:manasvibshah@gmail.com" style="color:#DD6B2A;text-decoration:none">EMAIL ↗</a>
+      <span style="color:#c9beb0">•</span>
+      <a href="tel:+919323830436" style="color:#5E7C56;text-decoration:none">PHONE ↗</a>
+    </div>
+    <div onClick="{{ scrollTop }}" style="position:absolute;right:30px;top:20px;width:96px;height:96px;cursor:pointer;display:flex;align-items:center;justify-content:center">
+      <div style="position:absolute;inset:0;animation:msSpin 14s linear infinite;font-family:'Courier New',monospace;font-size:10px;color:#8a8377">
+        <svg viewBox="0 0 100 100" style="width:100%;height:100%"><defs><path id="msCirc" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"></path></defs><text fill="#8a8377"><textPath href="#msCirc" startOffset="0">GO TO TOP • GO TO TOP • </textPath></text></svg>
+      </div>
+      <div style="width:50px;height:50px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;color:#DD6B2A;font-size:22px;box-shadow:0 8px 18px -8px rgba(56,51,46,0.5)">↑</div>
+    </div>
+  </section>
+
+  <!-- DARK FOOTER -->
+  <footer style="background:#2B2622;color:#cfc7bc;padding:42px 24px 50px;background-image:radial-gradient(circle, rgba(255,255,255,0.04) 1.1px, transparent 1.1px);background-size:24px 24px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-family:Caveat;font-size:26px;color:#e8e0d5;font-style:italic">Built with curiosity, chai ☕ and a lot of heart 🧡</div>
+        <div style="font-family:'Courier New',monospace;font-size:14px;color:#9a9088">{{ clock }} &nbsp;|&nbsp; {{ longDate }}</div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;padding-top:40px">
+        <div style="max-width:560px">
+          <div style="font-family:Caveat;font-size:24px;color:#DD6B2A">get in touch</div>
+          <h3 style="font-family:Archivo;font-weight:800;font-size:48px;line-height:1.02;margin:8px 0 26px;color:#f3ece2;text-transform:uppercase">LET'S TALK PEOPLE<br>&amp; HIRING.</h3>
+          <a href="mailto:manasvibshah@gmail.com" style="display:inline-flex;align-items:center;gap:10px;background:#DD6B2A;color:#fff;font-family:Archivo;font-weight:700;font-size:13px;letter-spacing:.12em;padding:15px 26px;border-radius:12px;text-decoration:none" style-hover="background:#c75c1f">SEND ME A MESSAGE ↗</a>
+        </div>
+        <div style="text-align:right">
+          <div style="font-family:Archivo;font-weight:700;font-size:13px;letter-spacing:.18em;color:#DD6B2A;margin-bottom:18px">LINKS</div>
+          <div style="display:flex;flex-direction:column;gap:14px;font-family:Archivo;font-weight:800;font-size:24px">
+            <a href="#top" style="color:#cfc7bc;text-decoration:none" style-hover="color:#fff">HOME ↗</a>
+            <a href="#experience" style="color:#cfc7bc;text-decoration:none" style-hover="color:#fff">EXPERIENCE ↗</a>
+            <a href="#skills" style="color:#cfc7bc;text-decoration:none" style-hover="color:#fff">SKILLS ↗</a>
+            <a href="#education" style="color:#cfc7bc;text-decoration:none" style-hover="color:#fff">EDUCATION ↗</a>
+            <a href="#contact" style="color:#cfc7bc;text-decoration:none" style-hover="color:#fff">CONTACT ↗</a>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top:36px;font-size:13px;color:#6f675e;text-align:center">© 2026 Manasvi Shah · Ahmedabad, Gujarat · +91 93238 30436</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { clock: '', longDate: '', stamp: '' };
+
+  update() {
+    const d = new Date();
+    const clock = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', second: '2-digit' });
+    const longDate = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+    const mon = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const t = d.toLocaleTimeString('en-GB', { hour12: false });
+    this.setState({ clock, longDate, stamp: mon + ' ' + t });
+  }
+
+  componentDidMount() {
+    this.update();
+    this._t = setInterval(() => this.update(), 1000);
+  }
+  componentWillUnmount() { clearInterval(this._t); }
+
+  renderVals() {
+    return {
+      clock: this.state.clock,
+      longDate: this.state.longDate,
+      stamp: this.state.stamp,
+      printResume: () => window.print(),
+      scrollTop: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
+    };
+  }
+}
+</script>
+</body>
+</html>
